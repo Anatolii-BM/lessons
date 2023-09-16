@@ -1,0 +1,13 @@
+@import url(
+	"reset.css"
+);
+.text-first-block {
+	color: blue;
+}
+.last-paragraph {
+	font-weight: 700;
+}
+.some-span {
+	text-decoration-line: underline;
+	color: aqua;
+}
