@@ -1,0 +1,55 @@
+@import url(
+	"reset.css"
+);
+* {
+	color: green;
+}
+
+p{
+	color: blueviolet;
+}
+
+a{
+	color: brown;
+}
+
+li{
+	color: sandybrown;
+}
+
+.zagolovok{
+	color:  blue;
+}
+
+.spanch-bob{
+	color: darkblue;
+}
+
+#first-look-family-bees{
+	color: yellow;
+}
+div.second{
+	color: green;
+}
+.second__link.link{
+	color: deepskyblue;
+}
+
+.link22,
+.span22{
+	color: red;
+}
+
+.second span {
+	color: yellow;
+}
+.text > h3 {
+	color: black;
+}
+
+.text ~ span {
+	color: red;
+}
+[class*="second__link"] {
+	color: red;
+}
