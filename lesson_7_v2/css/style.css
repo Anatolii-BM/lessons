@@ -1,0 +1,349 @@
+
+@import url("fonts.css");
+@import url("reset.css");
+
+body{
+	font-family: "Inter", sans-serif;
+	color: #7d7d7d;
+	font-size: 18px;
+}
+.header{
+	font-size: 24px;
+	color: cadetblue;
+	text-align: center;
+	margin: 20px auto;
+}
+.licencing {
+	max-width: 1218px;
+	padding: 150.5px 0px;
+	margin: 0 auto;
+}
+
+.block-text {
+	max-width: 1218px;
+	margin-bottom: 100px;
+}
+.licencing-main{
+	text-align: center;
+	margin: 0px auto 70px;
+}
+
+.licencing-title,
+.sub-title-template,
+.title-licencing,
+.sub-title-license-1,
+.sub-title-license-2,
+.title-second-page {
+	font-family: "Poppins", sans-serif;
+	color: #37393F;
+	font-weight: 700;
+	line-height: 1.21;
+}
+
+.licencing-text-1,
+.licencing-text-2,
+.text {
+	line-height: 1.46;
+}
+.licencing-text-1,
+.licencing-text-2{
+	margin-bottom: 100px;
+}
+
+.template-image{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-color: #40DDB6;
+	margin-top: 5px;
+}
+
+.sub-title-template{
+	display: inline-block;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+
+.licencing-title{
+	text-align: center;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1.21;
+	/* margin-bottom: 70px; */
+}
+
+.title-licencing {
+	font-size: 40px;
+	margin-bottom: 11px;
+}
+
+.sub-title-license-1,
+.sub-title-license-2 {
+	font-size: 30px;
+}
+.sub-title-license-2{
+	margin-bottom: 8px;
+}
+.header,
+.license-color,
+.text-pexels,
+.hyper-fonts{
+	color: #40DDB6;
+}
+.license-color{
+	font-weight: 400;
+}
+
+.text-pexels{
+	margin-bottom: 24px;
+}
+
+.paragraph-icons-graphics{
+	margin-bottom: 32px;
+}
+.paragraph-icons-graphics-2{
+	margin-bottom: 24px;
+}
+
+.hyper-fonts{
+	font-weight: 500;
+}
+
+
+/* друга частина макету Project information */
+
+.main-second-page{
+	max-width: 830px;
+	margin: 0 auto;
+}
+.title-second-page {
+	font-size: 40px;
+	line-height: 1.27;
+	margin-bottom: 13px;
+}
+.text {
+	margin-bottom: 35px;
+}
+.text-list {
+	font-weight: 500;
+	padding-bottom: 35px;
+	padding-left: 16px;
+	line-height: 1.46;
+}
+/* Частина третя, блок Euphoria */
+
+.clothing {
+	max-width: 1440px;
+	padding: 100px;
+	margin: 0 auto;
+}
+.main-clothing{
+	max-width: 1240px;
+}
+
+.title-clothing {
+	color: #3C4242;
+	font-family: "Core Sans C", sans-serif;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 0.56px;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+}
+
+.sub-title-clothing,
+.text-clothing,
+.text-clothing2,
+.euphoria,
+.hyper3 {
+	font-size: 20px;
+	color: #807D7E;
+	letter-spacing: 0.4px;
+}
+
+.sub-title-clothing,
+.hyper3 {
+	font-family: "Core Sans C", sans-serif;
+	font-weight: 600;
+	line-height: 1.67;
+}
+
+.sub-title-clothing {
+	margin-bottom: 25px;
+}
+
+.text-clothing,
+.text-clothing2,
+.euphoria {
+	font-family: "Causten", sans-serif;
+}
+.text-clothing {
+	line-height: 1.67;
+	margin-bottom: 20px;
+}
+.text-clothing2 {
+	line-height: 1.67;
+	margin-bottom: 25px;
+}
+.euphoria{
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+
+/* четвертий блок Jewelery */
+
+.jewelery {
+	max-width: 1600px;
+	padding: 0px 251px 0px 246px;
+	margin: 50px auto;
+}
+
+.jewelery-main {
+	max-width: 1103px;
+}
+
+.jewelery-text {
+	display: inline-block;
+	max-width: 503px;
+	margin-right: 75px;
+}
+
+.jewels-title,
+.jewels-main-title,
+.jewels-subtitle {
+	font-family: Cormorant Infant;
+	font-weight: 700;
+}
+
+.jewels-title {
+	text-transform: uppercase;
+	color: #D58417;
+	font-size: 20px;
+	margin-bottom: 27px;
+}
+
+.jewels-main-title {
+	color: #000;
+	font-size: 64px;
+	margin-bottom: 31px;
+}
+
+.jewels-subtitle {
+	color: #606060;
+	font-size: 30px;
+	line-height: 1.4;
+	margin-bottom: 69px;
+}
+
+.jewels-image-shadow {
+	display: inline-block;
+	vertical-align: top;
+}
+.image-one,
+.image-two {
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 235px;
+	border: 1px solid #502203;
+}
+
+.image-one{
+	width: 177px;
+	height: 336px;
+	margin-right: 30px;
+}
+.image-two{
+	width: 307px;
+	height: 500px;
+}
+.first-image{
+	margin-left: -10px;
+	padding-top: 14px;
+}
+.second-image{
+	margin-left: -10px;
+	padding-top: 19px;
+}
+
+/* п'ятий блок для тренування */
+
+.block1{
+	border: 5px solid #D58417;
+	margin-bottom: 15px;
+	max-width: 300px;
+	display: inline-block;
+	margin-right: 20px;
+	margin-left: 50px;
+	border-radius: 25px;
+	padding: 10px;
+}
+.block2{
+	border: dashed #502203;
+	margin-bottom: 25px;
+	background-color: red;
+	max-width: 400px;
+	display: inline-block;
+	margin-right: 50px;
+	border-radius: 45px 0px 45px 0px;
+	padding: 15px;
+	box-shadow: 10px 10px 30px rgba(59, 34, 202, 0.799);
+}
+.block3{
+	outline: 10px dotted #000;
+	max-width: 300px;
+	display: inline-block;
+	background-color: aqua;
+	padding: 5px;
+	font-weight: 800;
+	text-align: center;
+	margin-right: 20px;
+}
+.circle{
+	display: inline-block;
+	width: 250px;
+	height: 250px;
+	background-color: yellow;
+	opacity: 0.3;
+	border-radius: 50%;
+	box-shadow: 25px -50px 25px #0d740b;
+}
+.visability{
+	display: inline-block;
+	visibility: hidden;
+}
+.opasity{
+	display: inline-block;
+	opacity: 0;
+	background-color: #000;
+	vertical-align: top;
+}
+.part5{
+	max-width: 1600px;
+	padding: 0px 251px 0px 246px;
+	margin: 50px auto;
+}
+/* футер */
+
+.hyper{
+	font-size: 24px;
+	color: cadetblue;
+	text-align: center;
+	max-width: 800px;
+	margin: 10px auto;
+	text-decoration: underline;
+	font-size: 32px;
+}
+.arrow-top {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #580ed0;
+	border-radius: 25px;
+	justify-content: center;
+	text-align: center;
+	margin: 0 auto;
+	max-width: 800px;
+}
