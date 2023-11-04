@@ -1,0 +1,824 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	color: #7d7d7d;
+}
+
+.nav-list {
+	width: 100%;
+	padding: 20px;
+	height: 120px;
+	text-align: right;
+	background-image: linear-gradient(90deg, #03fae1d0 25%, #b6c206fb 100%);
+	margin-bottom: 10px;
+}
+
+.nav-list > ul > li {
+	color: beige;
+	padding: 15px 5px;
+	margin-right: 10px;
+	line-height: 40px;
+	font-size: 18px;
+	display: inline-block;
+	background-image: linear-gradient(360deg, #ffee00c5 0%, #033cb6be 50%);
+	border-radius: 0px 30px 30px 0px;
+	text-shadow: 5px 5px 3px #0a1b02;
+}
+.nav-list > ul > li:hover {
+	color: rgb(2, 179, 179);
+	text-decoration: overline;
+}
+
+.practice-psevdo-class:hover .hidden {
+	visibility: visible;
+	opacity: 1;
+}
+
+.hidden p {
+	text-align: center;
+}
+.hidden {
+	max-width: 50%;
+	height: 400px;
+	background: url("../img/celica_gt.png") 0 0 / cover;
+	margin: 0 auto;
+	visibility: hidden;
+	border-radius: 20px;
+	opacity: 0;
+	margin-bottom: 25px;
+}
+
+.test-hover p,
+.test-focused p {
+	margin-bottom: 25px;
+}
+.test-hover a:hover {
+	color: rgb(255, 157, 0);
+	margin: 0px auto;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	font-size: 24px;
+}
+
+.test-hover a:active {
+	color: maroon;
+}
+
+.test-focused a:focus {
+	outline: 3px dotted blue;
+	font-size: 24px;
+	color: aqua;
+	font-weight: 700;
+}
+
+.visited > ol > li a:visited {
+	color: red;
+}
+.visited {
+	background-color: aqua;
+	margin-bottom: 10px;
+	line-height: 30px;
+	padding: 1%;
+	font-size: 20px;
+	font-weight: 600;
+}
+.visited h3 {
+	color: brown;
+	font-size: 30px;
+	margin-bottom: 20px;
+	background-image: none;
+	background-position: center;
+}
+
+.traffic-light {
+	background-color: rgb(50, 48, 52);
+	display: block;
+	margin: 20px auto;
+	max-width: 250px;
+	min-height: 600px;
+	border-radius: 15px;
+	text-align: center;
+	align-items: center;
+}
+.traffic-light a:hover {
+	text-decoration: underline;
+}
+
+.traffic-light h2 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #4fff;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+.traffic-light a {
+	font-size: 14px;
+	text-transform: capitalize;
+	color: #fff;
+	display: block;
+}
+.traffic-light a {
+	margin-bottom: 10px;
+	margin: 10px auto;
+}
+.circle-green,
+.circle-yellow,
+.circle-red {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	visibility: hidden;
+	outline: 5px solid black;
+	display: block;
+	margin: 5px auto;
+	justify-items: center;
+}
+.circle-green {
+	background-color: green;
+}
+.circle-yellow {
+	background-color: yellow;
+}
+.circle-red {
+	background-color: red;
+}
+
+.circle-green:target,
+.circle-yellow:target,
+.circle-red:target {
+	visibility: visible;
+}
+
+.text-block {
+	margin-bottom: 20px;
+	font-size: 20px;
+	padding: 15px;
+	border-radius: 5px;
+}
+.text-block p,
+.text-block h2 {
+	margin-bottom: 20px;
+	background-color: brown;
+	border-radius: 10px;
+	padding: 5px;
+}
+.text-block h2:first-child {
+	color: rgb(87, 4, 1);
+	line-height: 25px;
+}
+.text-block h2:last-of-type {
+	color: blue;
+	background-color: darkgrey;
+	line-height: 25px;
+}
+.text-block p:last-child {
+	text-transform: uppercase;
+	font-weight: 700;
+	word-spacing: 10px;
+	line-height: 45px;
+	background-color: rgb(174, 160, 1);
+	opacity: 0.9;
+}
+.text-block p:first-of-type {
+	letter-spacing: 5px;
+	text-transform: lowercase;
+	color: violet;
+}
+.text-block p:nth-child(3) {
+	text-align: end;
+	font-size: 28px;
+	line-height: 24px;
+	line-height: 60px;
+}
+.text-block p:nth-of-type(odd) {
+	font-size: 40px;
+	background-color: rgb(79, 67, 158);
+}
+.text-block p:nth-of-type(even) {
+	color: yellow;
+	background-color: rgb(11, 168, 168);
+}
+.text-block p:not(:last-child) {
+	margin-bottom: 20px;
+}
+.practice-psevdo-elements,
+.section {
+	background-color: antiquewhite;
+	width: 800px;
+	max-height: 150px;
+	margin: 0 auto;
+	line-height: 50px;
+	margin-bottom: 20px;
+	padding: 20px;
+	border-radius: 15px;
+}
+h6::after {
+	content: "після контенту";
+	background-color: rgb(247, 97, 97);
+	margin-left: 30px;
+	font-size: 24px;
+	display: inline-block;
+}
+h6::before {
+	content: "до/перед контентом";
+	background-color: rgb(6, 62, 6);
+	margin-right: 30px;
+	font-size: 24px;
+	display: inline-block;
+}
+h6:hover::after {
+	opacity: 0.8;
+	outline: 3px solid black;
+	border-radius: 5px;
+	font-weight: 500;
+	display: inline-block;
+	padding: 3px;
+}
+
+.section::before,
+.section::after {
+	content: "***";
+	display: inline-block;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.section:hover::after,
+.section:hover::before {
+	content: "***";
+	color: blue;
+	font-weight: 700;
+	display: inline-block;
+}
+
+/* ДЗ макет №1 */
+
+.handshake,
+.benefits {
+	width: 692px;
+	margin: 37px auto 50px;
+}
+.benefits {
+	margin-bottom: 50px;
+}
+.image {
+	margin-bottom: 37px;
+}
+.title {
+	margin-bottom: 3px;
+	color: #37393f;
+	font-size: 30px;
+}
+.sub-title {
+	color: #6b77e5;
+	font-size: 20px;
+	margin-bottom: 12px;
+}
+
+.title,
+.sub-title {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	line-height: 1.27;
+}
+.text {
+	line-height: 1.47;
+}
+.text p:first-of-type {
+	margin-bottom: 42px;
+}
+
+.image-benefits {
+	max-width: 331px;
+	min-height: 266px;
+	margin-right: 29px;
+}
+.content-benefits {
+	display: inline-block;
+	max-width: 326px;
+	line-height: 1.27;
+}
+
+.title-benefits,
+.sub-title-benefits {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+}
+.title-benefits {
+	color: #37393f;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+.sub-title-benefits {
+	color: #40ddb6;
+	font-size: 20px;
+	margin-bottom: 23.5px;
+}
+.list-benefits li:not(:last-of-type) {
+	margin-bottom: 30px;
+}
+
+.block > * :not(:last-child) {
+	margin-bottom: 20px;
+}
+.list-benefits li::before {
+	content: "";
+	background: url("../img/vector.png") 0 0 no-repeat;
+	width: 27px;
+	height: 27px;
+	display: inline-block;
+	margin-right: 8px;
+	opacity: 1;
+	margin-bottom: -3px;
+}
+.list-benefits li:hover::before {
+	opacity: 0.8;
+}
+/* ------------------------------- */
+
+.handshake .text p:first-of-type {
+	margin-bottom: 42px;
+}
+.handshake .text p:nth-child(2) {
+	margin-bottom: 40px;
+}
+.handshake > *p:last-of-type {
+	margin-bottom: 0;
+}
+
+/* ДЗ макет №2 */
+
+.welcome-whitecollar {
+	max-width: 692px;
+	margin: 39px auto 40px;
+	line-height: 1.46;
+	border: 2px solid black;
+	padding: 5px 10.5px;
+	/* padding і border прописані для покращення візуального сприйнятт
+	ширина теж збільшена дл 692, як в попередньому блоці */
+}
+.welcome-whitecollar-text,
+.welcome-whitecollar-list {
+	margin-bottom: 48px;
+}
+
+.welcome-whitecollar-text h5::before {
+	content: "";
+	display: inline-block;
+	font-weight: 500;
+	background: url(../img/cube.png) 0 0 no-repeat;
+	width: 12px;
+	height: 12px;
+	margin-right: 6px;
+}
+.welcome-whitecollar-text h5 {
+	margin-bottom: 16px;
+}
+
+.welcome-whitecollar-text h3 {
+	font-family: "Poppins", sans-serif;
+	color: #37393f;
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	max-width: 415px;
+	max-height: 96px;
+	line-height: 1.21;
+}
+
+.welcome-whitecollar-text p:first-of-type {
+	margin-bottom: 16px;
+}
+.welcome-whitecollar-text p:last-of-type {
+	margin-bottom: 0;
+}
+.list-subtitle {
+	padding: 28px 41px 28px 35px;
+	border: 1px solid #e3e3e3;
+}
+.list-subtitle > h3 {
+	color: #37393f;
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-bottom: 12px;
+}
+.list-subtitle > p {
+	line-height: 1.46;
+}
+.welcome-whitecollar-list .list-subtitle:first-child {
+	margin-bottom: 31px;
+}
+
+.button-more {
+	padding: 21px 35px 22px 35px;
+	justify-content: center;
+	align-items: center;
+	background: #6b77e5;
+	max-width: 200px;
+	min-height: 65px;
+	color: #fff;
+	font-weight: 600;
+	line-height: 1.2;
+	text-transform: capitalize;
+}
+
+.list-subtitle h3::before {
+	content: "";
+	background: url("../img/vector.png") 0 0 no-repeat;
+	width: 27px;
+	height: 27px;
+	display: inline-block;
+	margin-right: 19px;
+	margin-bottom: -3px;
+	opacity: 1;
+}
+.list-subtitle h3:hover::before {
+	opacity: 0.8;
+}
+.list-subtitle p {
+	padding-left: 46px;
+}
+/* ДЗ макет №3 */
+
+.how-we-work-block {
+	max-width: 1220px;
+	max-height: 464px;
+	margin: 50px auto;
+}
+.how-we-work-title {
+	margin-bottom: 77px;
+}
+.how-we-work-title h5 {
+	color: #37393f;
+	font-weight: 500;
+	line-height: 1.2;
+	margin-bottom: 16px;
+	text-align: center;
+	align-items: center;
+	text-transform: capitalize;
+}
+.how-we-work-title h5::before {
+	content: "";
+	display: inline-block;
+	background: url(../img/cube.png) 0 0 no-repeat;
+	width: 12px;
+	height: 12px;
+	margin-right: 5px;
+}
+.how-we-work-title h3 {
+	color: #37393f;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+}
+
+.how-we-work-list {
+	font-size: 0;
+}
+.card-block {
+	max-width: 386px;
+	width: 100%;
+	text-align: center;
+	/* vertical-align: top; */
+	display: inline-block;
+}
+.card-block-content {
+	display: inline-block;
+	padding: 58px 43px;
+	background: #f4f4f4;
+}
+
+.icon-1::before,
+.icon-2::before,
+.icon-3::before {
+	content: "";
+	display: inline-block;
+	width: 72px;
+	height: 72px;
+	margin-top: -94px;
+	margin-bottom: 22px;
+}
+
+.icon-1::before {
+	background: url("../img/icon-calendar.png") 0 0 no-repeat;
+}
+
+.icon-2::before {
+	background: url("../img/icon-puzzle.png") 0 0 no-repeat;
+}
+
+.icon-3::before {
+	background: url("../img/icon-shield.png") 0 0 no-repeat;
+}
+
+.card-block:not(:last-child) {
+	margin-right: 31px;
+}
+
+.card-block-content h4 {
+	color: #37393f;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 16px;
+}
+.card-block-content p {
+	line-height: 1.46;
+	margin-bottom: 37px;
+	text-align: center;
+	font-size: 18px;
+}
+.card-block-content a {
+	display: inline-block;
+	color: #6b77e5;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.2;
+	text-transform: capitalize;
+}
+.card-block-content a:hover {
+	text-decoration: underline;
+}
+
+/* ДЗ макет №4 */
+
+.jewelery-block-02 {
+	max-width: 1234px;
+	width: 100%;
+	max-height: 674px;
+	margin: 30px auto;
+	font-size: 0;
+	padding: 10px 10px;
+}
+.jewelery-text-block {
+	max-width: 460px;
+	max-height: 155px;
+	display: inline-block;
+	color: #000;
+	font-family: "Cormorant Infant", sans-serif;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1.15;
+	text-transform: capitalize;
+	margin-right: 25px;
+	margin-top: 15%;
+}
+.jewelery-text-block::after {
+	content: "";
+	display: inline-block;
+	width: 60%;
+	height: 3px;
+	background: #78473b;
+	margin-bottom: 37px;
+}
+
+.jewelery-item-1,
+.jewelery-item-2 {
+	display: inline-block;
+}
+
+.jewelery-item-1 {
+	max-width: 335px;
+	margin-right: 55px;
+	margin-top: 52px;
+	vertical-align: top;
+}
+
+.jewelery-item-2 {
+	display: inline-block;
+	max-width: 335px;
+	margin-right: 0px;
+	vertical-align: top;
+}
+
+.image-item-1,
+.image-item-2 {
+	border: 1px solid #000;
+	margin-bottom: 25px;
+}
+.image-item-1 img,
+.image-item-2 img {
+	display: inline-block;
+	margin: 10px -10px -10px 10px;
+}
+
+.jewelery-item-2 {
+	max-width: 336px;
+	margin-right: 0px;
+}
+.jewelery-item-2 h3 {
+	color: #000;
+	font-family: "Cormorant Infant", sans-serif;
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 1.13;
+	margin-bottom: 40px;
+}
+
+.price-item h4,
+.price-item a {
+	color: #000;
+	font-family: "Cormorant Infant", sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.4;
+}
+.price-item a:hover {
+	outline: solid 1px black;
+	border-radius: 5px;
+}
+.price-item h4:not(:last-of-type) {
+	margin-bottom: 4px;
+}
+
+/* СПРОБА ПЕРШОЇ ГРИ) */
+
+.game-block {
+	max-width: 1200px;
+	width: 100%;
+	min-height: 550px;
+	height: 100%;
+	background-color: #168b6eac;
+	margin: 0 auto;
+	padding: 0px 70px;
+	outline: 5px solid goldenrod;
+	font-size: 0;
+	margin-bottom: 35px;
+}
+
+.game-line {
+	background-color: rgb(212, 254, 28);
+}
+.start-point {
+	display: inline-block;
+	margin-left: 20%;
+	width: 80px;
+	height: 50px;
+	background-color: red;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	color: #000;
+	padding: 10px;
+}
+
+.start-point:hover + .line-1 {
+	visibility: visible;
+}
+.line-1 {
+	margin-left: 20%;
+	width: 298px;
+	height: 20px;
+	visibility: hidden;
+}
+
+.line-1:hover {
+	visibility: visible;
+}
+
+.line-1:hover + .line-2 {
+	visibility: visible;
+}
+
+.line-2 {
+	margin-left: 45.3%;
+	width: 30px;
+	height: 200px;
+	visibility: hidden;
+}
+
+.line-2:hover {
+	visibility: visible;
+}
+
+.line-2:hover + .line-3 {
+	visibility: visible;
+}
+
+.line-3 {
+	margin-left: 45.3%;
+	width: 207px;
+	height: 20px;
+	visibility: hidden;
+}
+
+.line-3:hover {
+	visibility: visible;
+}
+
+.line-3:hover + .line-4 {
+	visibility: visible;
+}
+
+.line-4 {
+	margin-left: 62%;
+	width: 30px;
+	height: 100px;
+	visibility: hidden;
+}
+
+.line-4:hover {
+	visibility: visible;
+}
+
+.line-4:hover + .line-5 {
+	visibility: visible;
+}
+
+.line-5 {
+	margin-left: 12%;
+	width: 560px;
+	height: 20px;
+	visibility: hidden;
+}
+
+.line-5:hover {
+	visibility: visible;
+}
+
+.line-5:hover + .line-6 {
+	visibility: visible;
+}
+
+.line-6 {
+	margin-left: 12%;
+	width: 20px;
+	height: 150px;
+	visibility: hidden;
+	margin-top: -150px;
+}
+.line-6:hover {
+	visibility: visible;
+}
+.line-6:hover + .line-7 {
+	visibility: visible;
+}
+.line-7 {
+	margin-left: 3%;
+	width: 100px;
+	height: 20px;
+	visibility: hidden;
+	margin-top: -150px;
+}
+.line-7:hover {
+	visibility: visible;
+}
+
+.line-8 {
+	margin-left: 2%;
+	width: 200px;
+	height: 80px;
+	visibility: hidden;
+}
+.line-8:hover {
+	visibility: visible;
+	background-color: red;
+}
+.line-7:hover + .line-8 {
+	visibility: visible;
+	background-color: red;
+	background-color: red;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+	color: #000;
+	padding: 15px 5px;
+}
+.line-8:hover + .finish-game {
+	visibility: visible;
+}
+
+.finish-game {
+	background: url("../img/celica_gt.png") 0 50% / contain no-repeat;
+	max-width: 300px;
+	min-height: 300px;
+	height: 100%;
+	width: 100%;
+	visibility: hidden;
+	margin-top: -240px;
+	margin-left: 50%;
+	border-radius: 10px;
+	outline: solid 3px red;
+	padding: 10px;
+}
+
+.finish-game:hover {
+	visibility: visible;
+}
+.hyper {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	align-items: center;
+	padding-bottom: 25px;
+}
