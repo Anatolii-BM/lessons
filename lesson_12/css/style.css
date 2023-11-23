@@ -1,0 +1,369 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	color: #392323;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: blue;
+	padding: 15px;
+	z-index: 50;
+}
+
+[class*="__container"] {
+	max-width: 850px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.menu__item {
+	display: inline-block;
+	position: relative;
+	margin: 0px 50px;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.menu__link {
+	background-color: yellow;
+	display: inline-block;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.menu__item:hover .menu__link {
+	background-color: yellowgreen;
+}
+.menu__item:hover .sub-menu {
+	visibility: visible;
+}
+
+.sub-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	color: black;
+	padding-top: 5px;
+	width: 120px;
+	visibility: hidden;
+	font-size: 16px;
+}
+
+.sub-menu__item {
+	background-color: rgb(182, 184, 182);
+}
+
+.sub-menu__link {
+	display: inline-block;
+	padding: 10px;
+	border-radius: 10px;
+}
+.sub-menu__link:hover {
+	text-decoration: underline;
+}
+
+.sub-menu__item:hover .sub-menu__link {
+	background-color: yellowgreen;
+}
+
+.sub2-menu__item:hover .sub2-menu__link {
+	background-color: yellowgreen;
+}
+
+.sub-menu__item:hover .sub2-menu {
+	visibility: visible;
+}
+
+.sub2-menu {
+	position: absolute;
+	top: 72%;
+	left: 100%;
+	color: black;
+	padding-top: 5px;
+	width: 100%;
+	visibility: hidden;
+	font-size: 14px;
+}
+
+.sub2-menu__item {
+	background-color: rgb(169, 169, 169);
+}
+
+.sub2-menu__link {
+	display: inline-block;
+	padding: 10px;
+	border-radius: 10px;
+}
+.sub2-menu__link:hover {
+	text-decoration: underline;
+}
+
+.page {
+	padding-top: 100px;
+}
+
+.page__container {
+	font-size: 0;
+}
+
+.side {
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+	padding: 15px;
+	background-color: rebeccapurple;
+	position: sticky;
+	top: 100px;
+	margin-right: 10px;
+}
+
+.content {
+	font-size: 18px;
+	display: inline-block;
+	padding: 15px;
+	background-color: aqua;
+	width: 600px;
+	text-align: justify;
+}
+
+/* SIDE меню */
+
+.menu-side__item {
+	position: relative;
+}
+
+.menu-side__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.menu-side__link {
+	background-color: darkgray;
+	display: block;
+	padding: 5px;
+	font-size: 16px;
+	border-radius: 5px;
+	font-weight: 700;
+}
+
+.menu-side__item:hover .menu-side__link {
+	background-color: rgb(118, 117, 117);
+}
+
+.menu-side__item:hover .sub-menu-side {
+	visibility: visible;
+}
+
+.sub-menu-side {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	padding-left: 5px;
+	width: 150px;
+	visibility: hidden;
+}
+
+.sub-menu-side__item {
+	background-color: rgb(116, 79, 152);
+	width: 120px;
+	font-size: 14px;
+	padding: 5px;
+}
+
+.sub-menu-side__link {
+	display: inline-block;
+	padding: 5px;
+	font-weight: 600;
+}
+.sub-menu-side__link:hover {
+	text-decoration: underline;
+	background-color: rgb(118, 117, 117);
+	width: 100%;
+	border-radius: 5px;
+}
+
+.sub-menu-side__item:hover .sub2-menu-side {
+	visibility: visible;
+}
+
+.sub2-menu-side {
+	position: absolute;
+	top: 0;
+	left: 80%;
+	padding-left: 5px;
+	width: 150px;
+	visibility: hidden;
+}
+
+.sub2-menu-side__item {
+	background-color: rgb(122, 98, 147);
+	width: 100px;
+	font-size: 14px;
+	padding: 5px;
+}
+
+.sub2-menu-side__link {
+	display: inline-block;
+	padding: 5px;
+	font-weight: 500;
+}
+.sub2-menu-side__link:hover {
+	text-decoration: underline;
+	background-color: rgb(118, 117, 117);
+	width: 100%;
+	border-radius: 5px;
+}
+
+/* блок тестування STICKY */
+.block-1,
+.block-2,
+.block-3 {
+	text-transform: uppercase;
+	height: 80px;
+	position: sticky;
+	top: 70px;
+	left: 0;
+	font-weight: 700;
+	margin-bottom: 10px;
+	padding: 30px;
+}
+.section-1 p,
+.text p {
+	margin-bottom: 10px;
+	text-align: justify;
+	padding: 0px 10px;
+}
+
+.block-1 {
+	z-index: 2;
+	background-color: rgb(121, 187, 235);
+	text-align: left;
+}
+.block-2 {
+	z-index: 3;
+	background-color: rgb(74, 167, 234);
+	text-align: center;
+}
+.block-3 {
+	z-index: 4;
+	background-color: rgb(10, 143, 237);
+	text-align: right;
+}
+
+/* наша команда */
+
+.text p:last-of-type {
+	margin-bottom: 50px;
+}
+
+.team {
+	font-size: 0;
+	max-width: 1220px;
+	width: 100%;
+	margin: 0 auto;
+}
+.team-card {
+	display: inline-block;
+	width: 386px;
+	height: 532px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.team-card--margin {
+	margin-bottom: 31px;
+	margin-right: 31px;
+}
+.team-card--margin:nth-child(3),
+.team-card--margin:nth-child(6) {
+	margin-right: 0;
+}
+.team-card__image {
+	width: 100%;
+	height: 100%;
+	width: 386px;
+	height: 532px;
+	font-size: 0;
+}
+.team-name {
+	color: #37393f;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+.team-proffesion {
+	display: block;
+	color: #7d7d7d;
+	text-align: center;
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	line-height: 1.35;
+}
+.team-card__info {
+	position: absolute;
+	top: 396px;
+	left: 23px;
+	width: 341px;
+	padding: 24px 45px;
+	margin-bottom: 22px;
+	align-items: center;
+	background-color: #fff;
+}
+
+
+.team-card__social {
+	position: absolute;
+	top: 244px;
+	left: 108px;
+	visibility: hidden;
+}
+.team-card:hover .team-card__social {
+	visibility: visible;
+}
+.social__link--parametr:not(:last-of-type) {
+	margin-right: 13px;
+}
+.team-card__image::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	background-color: rgba(107, 119, 229, 0.7);
+}
+.team-card:hover .team-card__image::before {
+	content: "";
+	visibility: visible;
+}
+.social__link img{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+.social__link:hover img{
+	outline: 1px solid #fff;
+}
+
+.footer h2{
+	background-color: antiquewhite;
+	font-weight: 600;
+	font-size: 24px;
+	text-align: center;
+	height: 50px;
+	padding: 15px;
+}
