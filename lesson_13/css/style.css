@@ -1,0 +1,431 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	color: #392323;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgb(34, 195, 188);
+	background: linear-gradient(180deg, rgba(34, 195, 188, 1) 75%, rgba(0, 100, 94, 0) 100%);
+	padding: 10px 0px;
+	z-index: 50;
+	height: 60px;
+}
+.header__container {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgb(34, 195, 188);
+	background: linear-gradient(0deg, rgba(34, 195, 188, 1) 75%, rgba(0, 100, 94, 0) 100%);
+	padding: 15px 0px;
+	height: 50px;
+	z-index: 25;
+}
+
+.menu {
+	margin: 0 auto;
+	text-align: center;
+}
+.menu__item {
+	display: inline-block;
+}
+
+.menu h2 {
+	font-weight: 600;
+	letter-spacing: 5px;
+}
+.menu__item:not(:last-child) {
+	margin-right: 40px;
+}
+
+.menu__link {
+	padding: 10px;
+	background-color: rgb(49, 245, 229);
+	font-weight: 600;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.menu__link:hover {
+	text-decoration: underline;
+	color: rgb(7, 90, 126);
+}
+
+.page__practice {
+	background-color: rgb(204, 204, 247);
+	padding: 40px 0px 0px 0px;
+}
+
+.practice__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: rgb(116, 116, 247);
+}
+
+.practice__title {
+	text-align: center;
+	margin: 15px 0;
+	padding: 15px;
+	font-weight: 700;
+}
+
+.practice__items {
+	font-size: 0;
+	text-align: center;
+}
+.practice__item {
+	background-color: brown;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	margin: 0px 40px 40px 0px;
+	position: relative;
+	font-size: 18px;
+	top: 0;
+	left: 0;
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 15px 5px red;
+	outline: 2px solid black;
+	perspective: 300px;
+	perspective-origin: 0 0;
+}
+.practice__flip,
+.practice__case {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 18px;
+	font-weight: 600;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: chartreuse;
+	padding-top: 0;
+	transition: all 0.8s;
+	border-radius: 5px;
+}
+
+.practice__case {
+	padding-top: 45%;
+}
+
+.practice__flip {
+	padding: 0;
+}
+
+.practice__item:first-of-type:hover .practice__case {
+	transform: translate(-15px, -15px);
+}
+.practice__item:nth-of-type(2):hover .practice__case {
+	transform: translate(15px, 15px);
+}
+.practice__item:nth-of-type(3):hover .practice__case {
+	transform: scale(0.7, 1.2);
+}
+.practice__item:nth-of-type(4):hover .practice__case {
+	transform: scale(-1, 1);
+}
+.practice__item:nth-of-type(5):hover .practice__case {
+	transform: rotate(45deg);
+	border-radius: 50%;
+	outline: 2px solid black;
+}
+.practice__item:nth-of-type(6):hover .practice__case {
+	transform: rotateX(170deg);
+}
+.practice__item:nth-of-type(7):hover .practice__case {
+	transform: rotateY(130deg);
+}
+.practice__item:nth-of-type(8):hover .practice__case {
+	transform: skew(15deg, 20deg);
+}
+.practice__item:nth-of-type(9):hover .practice__case {
+	transform: translate(20px, 15px) scale(0.8) rotate(-50deg) skew(10deg, 25deg);
+}
+.practice__item:nth-of-type(10):hover .practice__case {
+	transform: rotate(15deg);
+	transform-origin: bottom right;
+}
+.practice__item:nth-of-type(11):hover .practice__case {
+	transform: translate3d(10px, 10px, -100px);
+}
+.practice__item:nth-of-type(12):hover .practice__case {
+	transform: rotate3d(20, 20, 20, 60deg);
+}
+.practice__item:nth-of-type(13):hover .practice__case {
+	transform: rotate3d(20, 20, 20, 60deg);
+}
+
+.practice__style {
+	background-color: rgba(223, 50, 50, 0.3);
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	margin: 0px 40px 40px 0px;
+	position: relative;
+	font-size: 18px;
+	top: 0;
+	left: 0;
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 15px 5px red;
+	outline: 2px solid black;
+	perspective: 1000px;
+	perspective-origin: 0 0;
+	transform-style: preserve-3d;
+}
+.practice__case-style {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 18px;
+	font-weight: 600;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: chartreuse;
+	padding-top: 45%;
+	transition: all 0.8s;
+	border-radius: 5px;
+}
+.practice__style:nth-of-type(13):hover .practice__case-style {
+	transform: rotateY(35deg);
+}
+.practice__style:nth-of-type(14):hover .practice__case-style {
+	transform: rotateX(360deg);
+}
+
+/* flip card */
+
+.flip__body {
+	position: relative;
+	perspective: 500px;
+	width: 200px;
+	height: 200px;
+	border-radius: 5px;
+	background-color: rgba(223, 50, 50, 0.3);
+}
+
+.flip__front,
+.flip__back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	transition: all 0.3s ease 0s;
+	padding-top: 45%;
+	padding-left: 10px;
+}
+
+.flip__front {
+	transform: rotateY(0deg);
+	background-color: chartreuse;
+	backface-visibility: hidden;
+}
+
+.flip__back {
+	background-color: brown;
+	transform: rotateY(-180deg);
+}
+
+.practice__item:last-of-type:hover .flip__back {
+	transform: rotateY(0deg);
+}
+
+.practice__item:last-of-type:hover .flip__front {
+	transform: rotateY(180deg);
+}
+
+/* машинка */
+
+.page__car {
+	height: 100%;
+	width: 100%;
+	padding: 100px 0px 100px 0px;
+	background-color: aqua;
+}
+
+.car__body {
+	transform: translate(5%, 10%);
+	width: 1100px;
+	height: 530px;
+	font-size: 0;
+	padding: 30px 50px;
+	margin: 0 auto;
+}
+
+.body__top-front {
+	position: relative;
+	left: 25%;
+	bottom: -120px;
+	width: 280px;
+	height: 130px;
+	background-color: black;
+	border-radius: 0px 20px 0px 0px;
+	border: 2px solid black;
+	z-index: 8;
+	transform: translate(17%, -35%) skew(45deg);
+	border-right: solid black 3px;
+	border-top: solid black 3px;
+	border-left: none;
+}
+.body__top-back {
+	position: relative;
+	left: 5%;
+	bottom: -50px;
+	width: 280px;
+	height: 130px;
+	background-color: black;
+	border-radius: 20px 0px 0px 0px;
+	border: 2px solid black;
+	z-index: 7;
+	transform: translate(35%, -81%) skew(-25deg);
+	border-right: solid black 3px;
+	border-top: solid black 3px;
+}
+.body__wings {
+	position: relative;
+	left: 4%;
+	bottom: -45px;
+	width: 230px;
+	height: 110px;
+	background-color: azure;
+	border-radius: 20px 20px 0px 0px;
+	z-index: 9;
+	transform: translate(52%, -205%) skew(-25deg);
+	border-right: solid black 3px;
+	border-top: solid black 2px;
+}
+.body__wings2 {
+	position: relative;
+	left: 4%;
+	bottom: -45px;
+	width: 260px;
+	height: 110px;
+	background-color: azure;
+	border-radius: 0px 20px 0px 0px;
+	z-index: 9;
+	transform: translate(102%, -304%) skew(45deg);
+	border-right: solid black 3px;
+	border-top: solid black 1px;
+}
+
+.body__bottom {
+	position: relative;
+	left: 0;
+	bottom: 65%;
+	width: 800px;
+	height: 140px;
+	border-radius: 50px 20px 0px 0px;
+	border-top-right-radius: 55%;
+	border: 2px solid black;
+	background-color: rgb(51, 0, 255);
+	z-index: 10;
+}
+
+.body__door {
+	position: relative;
+	left: 47%;
+	bottom: 70%;
+	width: 12px;
+	height: 233px;
+	border-top-right-radius: 55%;
+	border: 2px solid black;
+	background-color: rgb(28, 0, 0);
+	z-index: 15;
+}
+
+.body__handle {
+	position: relative;
+	left: 200%;
+	bottom: -44%;
+	width: 45px;
+	height: 15px;
+	border-top-right-radius: 55%;
+	border: 2px solid black;
+	background-color: black;
+	z-index: 15;
+}
+
+.body__axle-back {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50% 50% 0 0;
+	background-color: transparent;
+	transform: translate(50%, -260%);
+	border-top: solid rgb(56, 15, 15) 10px;
+	z-index: 12;
+}
+
+.body__wheels {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	background-color: rgb(76, 68, 68);
+	transform: translate(5%, 2%);
+}
+
+.body__disk {
+	height: 90px;
+	width: 90px;
+	background-color: rgb(255, 136, 0);
+	border-radius: 50%;
+	transform: translate(25px, 25px);
+	border: dashed black 3px;
+}
+
+.body__axle-front {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50% 50% 0 0;
+	background-color: transparent;
+	transform: translate(375%, -360%);
+	border-top: solid rgb(56, 15, 15) 10px;
+	z-index: 12;
+}
+.body__headlamps {
+	position: relative;
+	right: -39%;
+	top: -53%;
+	width: 50px;
+	height: 50px;
+	border-radius: 0px 60px 0px 60px;
+	background-color: azure;
+	transform: translate(723%, -916%);
+	border: solid black 1px;
+	z-index: 12;
+}
+.body__stoplamps {
+	position: relative;
+	right: 35%;
+	top: -70%;
+	width: 50px;
+	height: 50px;
+	border-radius: 60px 0px 60px 0px;
+	background-color: rgb(198, 5, 5);
+	transform: translate(723%, -916%);
+	border: solid black 1px;
+	z-index: 12;
+}
